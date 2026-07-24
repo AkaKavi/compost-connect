@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
-import DashboardHero from "../components/dashboard/DashboardHero";
-import StatsGrid from "../components/dashboard/StatsGrid";
-import EarningsOverview from "../components/dashboard/EarningsOverview";
-import QuickActions from "../components/dashboard/QuickActions";
-import GreenRewards from "../components/dashboard/GreenRewards";
-import PickupHistory from "../components/dashboard/PickupHistory";
-import ImpactCard from "../components/dashboard/ImpactCard";
-import AIInsights from "../components/dashboard/AIInsights";
-import FloatingTip from "../components/dashboard/FloatingTip";
+import DashboardHero from "../components/Dashboard/DashboardHero";
+import StatsGrid from "../components/Dashboard/StatsGrid";
+import EarningsOverview from "../components/Dashboard/EarningsOverview";
+import QuickActions from "../components/Dashboard/QuickActions";
+import GreenRewards from "../components/Dashboard/GreenRewards";
+import PickupHistory from "../components/Dashboard/PickupHistory";
+import ImpactCard from "../components/Dashboard/ImpactCard";
+import AIInsights from "../components/Dashboard/AIInsights";
+import FloatingTip from "../components/Dashboard/FloatingTip";
 
 export default function Dashboard() {
   const [userName, setUserName] = useState("Vendor");

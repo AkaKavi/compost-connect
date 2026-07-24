@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import Mission from "../components/Mission";
-import HowItWorks from "../components/HowItWorks";
+import HowItWorks from "../components/Howitworks";
 import AISection from "../components/AISection";
 import Benefits from "../components/Benefits";
 import WhyChooseUs from "../components/WhyChooseUs";
