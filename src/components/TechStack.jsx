@@ -39,8 +39,8 @@ const technologies = [
       "Stores vendor information, pickup requests and processing records.",
   },
   {
-    title: "Assistance",
-    subtitle: "ChatGpt AI",
+    title: "ChatGPT (OpenAI)",
+    subtitle: "Assistance",
     description:
       "Frontend development, UI/UX suggestions, content refinement, and debugging",
   },
