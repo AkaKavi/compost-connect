@@ -33,10 +33,16 @@ const technologies = [
       "Analyses uploaded waste images to classify waste and estimate quantity.",
   },
   {
-    title: "MongoDB",
+    title: "Google Forms & Spreadsheets",
     subtitle: "Database",
     description:
       "Stores vendor information, pickup requests and processing records.",
+  },
+  {
+    title: "Assistance",
+    subtitle: "ChatGpt AI",
+    description:
+      "Frontend development, UI/UX suggestions, content refinement, and debugging",
   },
 ];
 
