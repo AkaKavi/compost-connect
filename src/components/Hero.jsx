@@ -39,7 +39,7 @@ function Hero() {
         {/* Right */}
         <div>
           <img
-            src="<img src="https://cdn.corenexis.com/f/ECXp6ATM1yg.png"
+            src="https://cdn.corenexis.com/f/ECXp6ATM1yg.png"
             alt="Hero"
             className="rounded-3xl shadow-2xl"
           />
