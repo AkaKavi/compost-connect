@@ -39,7 +39,7 @@ function Hero() {
         {/* Right */}
         <div>
           <img
-            src="<img src="https://ibb.co/6RrbbqDc"
+            src="<img src="<a href="https://ibb.co/6RrbbqDc"><img src="https://i.ibb.co/HDBYY9GL/Chat-GPT-Image-Aug-3-2026-09-53-54-PM.png" alt="Chat-GPT-Image-Aug-3-2026-09-53-54-PM" border="0"></a>"
             alt="Hero"
             className="rounded-3xl shadow-2xl"
           />
