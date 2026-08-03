@@ -39,7 +39,7 @@ function Hero() {
         {/* Right */}
         <div>
           <img
-            src="https://kommodo.ai/i/PKq4vTDc1NolvE3AJJY5"
+            src="<img src="https://img.sanishtech.com/u/6832511f3f3386191c233927b0f0f232.png" alt="ChatGPT Image Aug 3, 2026, 09_53_54 PM" width="1536" height="1024" loading="lazy" style="max-width:100%;height:auto;">"
             alt="Hero"
             className="rounded-3xl shadow-2xl"
           />
