@@ -39,19 +39,7 @@ export default function Footer() {
             <p>📍 Gurugram, India</p>
           </div>
 
-          <div>
-            <h3 className="text-white font-semibold text-lg mb-5">
-              Follow Us
-            </h3>
-
-            <div className="flex gap-4 text-2xl">
-              <span>📷</span>
-              <span>💼</span>
-              <span>🌐</span>
-            </div>
-          </div>
-
-        </div>
+          
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
           {new Date().getFullYear()} Compost Connect
