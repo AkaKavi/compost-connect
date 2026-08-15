@@ -34,8 +34,8 @@ export default function Footer() {
               Contact
             </h3>
 
-            <p className="mb-3">📧 hello@compostconnect.com</p>
-            <p className="mb-3">📞 +91 ***** *****</p>
+            <p className="mb-3">📧 compost.connect.web@gmail.com</p>
+            <p className="mb-3">📞 +91 99539 94486</p>
             <p>📍 Gurugram, India</p>
           </div>
 
