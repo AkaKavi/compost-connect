@@ -63,14 +63,14 @@ export default function About() {
               <div className="mt-12 flex flex-wrap gap-5">
 
                 <Link
-                  to="/our-solution"
+                  to="/solution"
                   className="rounded-xl bg-green-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-green-800"
                 >
                   Explore Solution
                 </Link>
 
                 <Link
-                  to="/vendor-register"
+                  to="/register"
                   className="rounded-xl border border-gray-300 bg-white px-8 py-4 font-semibold text-gray-800 transition-all duration-300 hover:border-green-700 hover:text-green-700"
                 >
                   Become a Vendor
