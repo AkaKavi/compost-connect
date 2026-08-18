@@ -258,16 +258,6 @@ export default function AIAnalysis() {
 
                 </div>
 
-                <button
-
-                  className="mt-12 w-full bg-green-600 hover:bg-green-700 transition text-white py-5 rounded-2xl font-bold text-lg"
-
-                >
-
-                  Schedule Pickup
-
-                </button>
-
               </motion.div>
 
             )}
