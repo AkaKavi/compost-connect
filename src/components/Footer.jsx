@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -26,35 +28,52 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-3">
+
               <li>
-                <a href="#" className="hover:text-green-400">
+                <Link
+                  to="/"
+                  className="hover:text-green-400 transition"
+                >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" className="hover:text-green-400">
+                <Link
+                  to="/about"
+                  className="hover:text-green-400 transition"
+                >
                   About
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" className="hover:text-green-400">
+                <Link
+                  to="/solution"
+                  className="hover:text-green-400 transition"
+                >
                   Our Solution
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" className="hover:text-green-400">
+                <Link
+                  to="/ai-demo"
+                  className="hover:text-green-400 transition"
+                >
                   AI Demo
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" className="hover:text-green-400">
+                <Link
+                  to="/"
+                  className="hover:text-green-400 transition"
+                >
                   Contact
-                </a>
+                </Link>
               </li>
+
             </ul>
           </div>
 
@@ -83,7 +102,7 @@ export default function Footer() {
         {/* Copyright */}
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-          {new Date().getFullYear()} Compost Connect
+          © {new Date().getFullYear()} Compost Connect
         </div>
 
       </div>
