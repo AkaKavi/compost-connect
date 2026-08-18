@@ -93,7 +93,7 @@ export default function Footer() {
         {/* Copyright */}
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-          © {new Date().getFullYear()} Compost Connect
+           {new Date().getFullYear()} Compost Connect
         </div>
 
       </div>
