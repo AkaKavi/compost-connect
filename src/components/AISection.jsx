@@ -82,10 +82,6 @@ export default function AISection() {
                 AI instantly analyzes it.
               </p>
 
-              <button className="mt-8 px-8 py-3 rounded-xl bg-green-600 text-white hover:bg-green-700 transition">
-                Choose Image
-              </button>
-
             </div>
           </motion.div>
 
