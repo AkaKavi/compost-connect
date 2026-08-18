@@ -63,7 +63,7 @@ export default function SolutionCTA() {
               </Link>
 
               <Link
-                to="/aidemo"
+                to="/ai-demo"
                 className="rounded-2xl border border-white bg-transparent px-8 py-4 text-lg font-bold transition hover:bg-white hover:text-green-700"
               >
                 Try AI Demo
