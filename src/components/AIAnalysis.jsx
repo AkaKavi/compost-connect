@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import AnimatedSection from "./AnimatedSection";
 
 export default function AIAnalysis() {
@@ -9,34 +8,17 @@ export default function AIAnalysis() {
   const [progress, setProgress] = useState(0);
   const [status, setStatus] = useState("");
 
-  const navigate = useNavigate();
-
   const analyseImage = () => {
     setLoading(true);
     setResult(false);
     setProgress(0);
 
     const steps = [
-      {
-        progress: 20,
-        status: "Uploading Image...",
-      },
-      {
-        progress: 40,
-        status: "Scanning Waste...",
-      },
-      {
-        progress: 60,
-        status: "Detecting Waste Type...",
-      },
-      {
-        progress: 80,
-        status: "Estimating Quantity...",
-      },
-      {
-        progress: 100,
-        status: "Finding Nearby Processor...",
-      },
+      { progress: 20, status: "Uploading Image..." },
+      { progress: 40, status: "Scanning Waste..." },
+      { progress: 60, status: "Detecting Waste Type..." },
+      { progress: 80, status: "Estimating Quantity..." },
+      { progress: 100, status: "Finding Nearby Processor..." },
     ];
 
     steps.forEach((step, index) => {
@@ -58,8 +40,6 @@ export default function AIAnalysis() {
     <section className="max-w-5xl mx-auto px-8 py-20">
       <AnimatedSection>
         <div className="bg-white rounded-[35px] shadow-xl border border-gray-200 p-10">
-
-          {/* Header */}
 
           <div className="flex flex-col md:flex-row md:justify-between md:items-center">
 
@@ -114,9 +94,6 @@ export default function AIAnalysis() {
                     animate={{
                       width: `${progress}%`,
                     }}
-                    transition={{
-                      duration: 0.4,
-                    }}
                     className="h-full bg-green-600"
                   />
 
@@ -148,8 +125,6 @@ export default function AIAnalysis() {
                 className="mt-20"
               >
 
-                {/* Main Results */}
-
                 <div className="grid md:grid-cols-2 gap-8">
 
                   {/* Waste Type */}
@@ -180,7 +155,7 @@ export default function AIAnalysis() {
 
                   </div>
 
-                  {/* Quantity */}
+                  {/* Estimated Quantity */}
 
                   <div className="rounded-3xl bg-green-50 p-8">
 
@@ -194,7 +169,7 @@ export default function AIAnalysis() {
 
                   </div>
 
-                  {/* Processor */}
+                  {/* Nearest Processor */}
 
                   <div className="rounded-3xl bg-green-50 p-8">
 
@@ -214,8 +189,6 @@ export default function AIAnalysis() {
 
                 <div className="grid md:grid-cols-2 gap-8 mt-8">
 
-                  {/* Distance */}
-
                   <div className="rounded-3xl bg-white border p-8">
 
                     <p className="text-gray-500">
@@ -227,8 +200,6 @@ export default function AIAnalysis() {
                     </h3>
 
                   </div>
-
-                  {/* Pickup Time */}
 
                   <div className="rounded-3xl bg-white border p-8">
 
@@ -243,15 +214,6 @@ export default function AIAnalysis() {
                   </div>
 
                 </div>
-
-                {/* Schedule Pickup */}
-
-                <button
-                  onClick={() => navigate("/register")}
-                  className="mt-12 w-full bg-green-600 hover:bg-green-700 transition text-white py-5 rounded-2xl font-bold text-lg"
-                >
-                  Schedule Pickup
-                </button>
 
               </motion.div>
             )}
