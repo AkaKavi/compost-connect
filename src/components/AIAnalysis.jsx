@@ -241,18 +241,7 @@ export default function AIAnalysis() {
                     </h3>
 
                   </div>
-
-                </div>
-
-                {/* Schedule Pickup */}
-
-                <button
-                  onClick={() => navigate("/register")}
-                  className="mt-12 w-full bg-green-600 hover:bg-green-700 transition text-white py-5 rounded-2xl font-bold text-lg"
-                >
-                  Schedule Pickup
-                </button>
-
+                  
               </motion.div>
             )}
           </AnimatePresence>
