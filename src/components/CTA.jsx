@@ -29,15 +29,6 @@ export default function CTA() {
 
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-5">
 
-            <button className="bg-white text-green-700 px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300 shadow-lg flex items-center justify-center gap-2">
-              Get Started
-              <ArrowRight size={20} />
-            </button>
-
-            <button className="border-2 border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-green-700 transition duration-300">
-              Contact Us
-            </button>
-
           </div>
 
         </motion.div>
