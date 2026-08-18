@@ -64,8 +64,6 @@ export default function AIAnalysis() {
 
           </div>
 
-          {/* Loading */}
-
           <AnimatePresence>
             {loading && (
               <motion.div
@@ -74,9 +72,7 @@ export default function AIAnalysis() {
                 exit={{ opacity: 0 }}
                 className="mt-16"
               >
-
                 <div className="flex justify-between">
-
                   <span className="font-semibold">
                     {status}
                   </span>
@@ -84,11 +80,9 @@ export default function AIAnalysis() {
                   <span>
                     {progress}%
                   </span>
-
                 </div>
 
                 <div className="mt-4 h-4 bg-gray-200 rounded-full overflow-hidden">
-
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{
@@ -96,41 +90,24 @@ export default function AIAnalysis() {
                     }}
                     className="h-full bg-green-600"
                   />
-
                 </div>
-
               </motion.div>
             )}
           </AnimatePresence>
 
-          {/* Results */}
-
           <AnimatePresence>
             {result && (
               <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 40,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                exit={{
-                  opacity: 0,
-                }}
-                transition={{
-                  duration: 0.6,
-                }}
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.6 }}
                 className="mt-20"
               >
 
                 <div className="grid md:grid-cols-2 gap-8">
 
-                  {/* Waste Type */}
-
                   <div className="rounded-3xl bg-green-50 p-8">
-
                     <p className="text-gray-500">
                       Waste Type
                     </p>
@@ -138,13 +115,9 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black text-green-700">
                       Vegetable Waste
                     </h3>
-
                   </div>
 
-                  {/* Confidence */}
-
                   <div className="rounded-3xl bg-green-50 p-8">
-
                     <p className="text-gray-500">
                       Confidence
                     </p>
@@ -152,13 +125,9 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black text-green-700">
                       97%
                     </h3>
-
                   </div>
 
-                  {/* Estimated Quantity */}
-
                   <div className="rounded-3xl bg-green-50 p-8">
-
                     <p className="text-gray-500">
                       Estimated Quantity
                     </p>
@@ -166,13 +135,9 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black text-green-700">
                       12.4 kg
                     </h3>
-
                   </div>
 
-                  {/* Nearest Processor */}
-
                   <div className="rounded-3xl bg-green-50 p-8">
-
                     <p className="text-gray-500">
                       Nearest Processor
                     </p>
@@ -180,17 +145,13 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black text-green-700">
                       Green Earth Compost
                     </h3>
-
                   </div>
 
                 </div>
 
-                {/* Additional Information */}
-
                 <div className="grid md:grid-cols-2 gap-8 mt-8">
 
                   <div className="rounded-3xl bg-white border p-8">
-
                     <p className="text-gray-500">
                       Distance
                     </p>
@@ -198,11 +159,9 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black">
                       2.3 km
                     </h3>
-
                   </div>
 
-                  <div className="rounded-3xl bg-white border p-8">
-
+                  <div className="rounded-3xl bg-white border p-8"
                     <p className="text-gray-500">
                       Estimated Pickup
                     </p>
@@ -210,7 +169,6 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black">
                       18 min
                     </h3>
-
                   </div>
 
                 </div>
