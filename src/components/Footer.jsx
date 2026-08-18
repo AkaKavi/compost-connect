@@ -2,7 +2,10 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+          {/* Brand */}
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4">
@@ -15,35 +18,75 @@ export default function Footer() {
             </p>
           </div>
 
+          {/* Quick Links */}
+
           <div>
             <h3 className="text-white font-semibold text-lg mb-5">
               Quick Links
             </h3>
 
             <ul className="space-y-3">
-              <li><a href="#" className="hover:text-green-400">Home</a></li>
-              <li><a href="#" className="hover:text-green-400">About</a></li>
-              <li><a href="#" className="hover:text-green-400">Our Solution</a></li>
-              <li><a href="#" className="hover:text-green-400">AI Demo</a></li>
-              <li><a href="#" className="hover:text-green-400">Contact</a></li>
+              <li>
+                <a href="#" className="hover:text-green-400">
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-green-400">
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-green-400">
+                  Our Solution
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-green-400">
+                  AI Demo
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-green-400">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
+
+          {/* Contact */}
 
           <div>
             <h3 className="text-white font-semibold text-lg mb-5">
               Contact
             </h3>
 
-            <p className="mb-3">📧 hello@compostconnect.com</p>
-            <p className="mb-3">📞 +91 ***** *****</p>
-            <p className="mb-3">📧 compost.connect.web@gmail.com</p>
-            <p className="mb-3">📞 +91 99539 94486</p>
-            <p>📍 Gurugram, India</p>
+            <p className="mb-3">
+              📧 compost.connect.web@gmail.com
+            </p>
+
+            <p className="mb-3">
+              📞 +91 9953994486
+            </p>
+
+            <p>
+              📍 Gurugram, India
+            </p>
           </div>
 
-@@ -59,4 +59,4 @@
+        </div>
+
+        {/* Copyright */}
+
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+          {new Date().getFullYear()} Compost Connect
+        </div>
+
       </div>
     </footer>
   );
-}
 }
