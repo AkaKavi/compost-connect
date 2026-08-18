@@ -38,42 +38,28 @@ export default function AIAnalysis() {
 
   return (
     <section className="max-w-5xl mx-auto px-8 py-20">
-
       <AnimatedSection>
-
         <div className="bg-white rounded-[35px] shadow-xl border border-gray-200 p-10">
 
           <div className="flex flex-col md:flex-row md:justify-between md:items-center">
 
             <div>
-
               <h2 className="text-4xl font-black">
-
                 AI Waste Analysis
-
               </h2>
 
               <p className="mt-3 text-gray-600">
-
                 Simulate how Compost Connect analyses
                 biodegradable waste using Artificial Intelligence.
-
               </p>
-
             </div>
 
             <button
-
               onClick={analyseImage}
-
               disabled={loading}
-
               className="mt-8 md:mt-0 bg-green-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-green-700 transition disabled:opacity-60"
-
             >
-
               {loading ? "Analysing..." : "Analyse Image"}
-
             </button>
 
           </div>
@@ -81,33 +67,22 @@ export default function AIAnalysis() {
           {/* Loading */}
 
           <AnimatePresence>
-
             {loading && (
-
               <motion.div
-
                 initial={{ opacity: 0 }}
-
                 animate={{ opacity: 1 }}
-
                 exit={{ opacity: 0 }}
-
                 className="mt-16"
-
               >
 
                 <div className="flex justify-between">
 
                   <span className="font-semibold">
-
                     {status}
-
                   </span>
 
                   <span>
-
                     {progress}%
-
                   </span>
 
                 </div>
@@ -115,127 +90,113 @@ export default function AIAnalysis() {
                 <div className="mt-4 h-4 bg-gray-200 rounded-full overflow-hidden">
 
                   <motion.div
-
                     initial={{ width: 0 }}
-
                     animate={{
                       width: `${progress}%`,
                     }}
-
                     className="h-full bg-green-600"
-
                   />
 
                 </div>
 
               </motion.div>
-
             )}
-
           </AnimatePresence>
 
           {/* Results */}
 
           <AnimatePresence>
-
             {result && (
-
               <motion.div
-
-                initial={{ opacity: 0, y: 40 }}
-
-                animate={{ opacity: 1, y: 0 }}
-
-                exit={{ opacity: 0 }}
-
-                transition={{ duration: 0.6 }}
-
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                exit={{
+                  opacity: 0,
+                }}
+                transition={{
+                  duration: 0.6,
+                }}
                 className="mt-20"
-
               >
 
                 <div className="grid md:grid-cols-2 gap-8">
 
+                  {/* Waste Type */}
+
                   <div className="rounded-3xl bg-green-50 p-8">
 
                     <p className="text-gray-500">
-
                       Waste Type
-
                     </p>
 
                     <h3 className="mt-2 text-3xl font-black text-green-700">
-
                       Vegetable Waste
-
                     </h3>
 
                   </div>
 
+                  {/* Confidence */}
+
                   <div className="rounded-3xl bg-green-50 p-8">
 
                     <p className="text-gray-500">
-
                       Confidence
-
                     </p>
 
                     <h3 className="mt-2 text-3xl font-black text-green-700">
-
                       97%
-
                     </h3>
 
                   </div>
 
+                  {/* Estimated Quantity */}
+
                   <div className="rounded-3xl bg-green-50 p-8">
 
                     <p className="text-gray-500">
-
                       Estimated Quantity
-
                     </p>
 
                     <h3 className="mt-2 text-3xl font-black text-green-700">
-
                       12.4 kg
-
                     </h3>
 
                   </div>
 
+                  {/* Nearest Processor */}
+
                   <div className="rounded-3xl bg-green-50 p-8">
 
                     <p className="text-gray-500">
-
                       Nearest Processor
-
                     </p>
 
                     <h3 className="mt-2 text-3xl font-black text-green-700">
-
                       Green Earth Compost
-
                     </h3>
 
                   </div>
 
                 </div>
+
+                {/* Additional Information */}
 
                 <div className="grid md:grid-cols-2 gap-8 mt-8">
 
                   <div className="rounded-3xl bg-white border p-8">
 
                     <p className="text-gray-500">
-
                       Distance
-
                     </p>
 
                     <h3 className="mt-2 text-3xl font-black">
-
                       2.3 km
-
                     </h3>
 
                   </div>
@@ -243,41 +204,23 @@ export default function AIAnalysis() {
                   <div className="rounded-3xl bg-white border p-8">
 
                     <p className="text-gray-500">
-
                       Estimated Pickup
-
                     </p>
 
                     <h3 className="mt-2 text-3xl font-black">
-
                       18 min
-
                     </h3>
 
                   </div>
 
                 </div>
 
-                <button
-
-                  className="mt-12 w-full bg-green-600 hover:bg-green-700 transition text-white py-5 rounded-2xl font-bold text-lg"
-
-                >
-
-                  Schedule Pickup
-
-                </button>
-
               </motion.div>
-
             )}
-
           </AnimatePresence>
 
         </div>
-
       </AnimatedSection>
-
     </section>
   );
 }
