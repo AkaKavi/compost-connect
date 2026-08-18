@@ -34,29 +34,16 @@ export default function Footer() {
               Contact
             </h3>
 
+            <p className="mb-3">📧 hello@compostconnect.com</p>
+            <p className="mb-3">📞 +91 ***** *****</p>
             <p className="mb-3">📧 compost.connect.web@gmail.com</p>
             <p className="mb-3">📞 +91 99539 94486</p>
             <p>📍 Gurugram, India</p>
           </div>
 
-          <div>
-            <h3 className="text-white font-semibold text-lg mb-5">
-              Follow Us
-            </h3>
-
-            <div className="flex gap-4 text-2xl">
-              <span>📷</span>
-              <span>💼</span>
-              <span>🌐</span>
-            </div>
-          </div>
-
-        </div>
-
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-          {new Date().getFullYear()} Compost Connect
-        </div>
+@@ -59,4 +59,4 @@
       </div>
     </footer>
   );
+}
 }
