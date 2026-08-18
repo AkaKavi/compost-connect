@@ -838,7 +838,7 @@ export default function About() {
             <div className="mt-14 flex flex-wrap justify-center gap-6">
 
               <Link
-                to="/vendor-register"
+                to="/register"
                 className="rounded-xl bg-white px-10 py-4 font-bold text-green-700 shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
 
@@ -847,7 +847,7 @@ export default function About() {
               </Link>
 
               <Link
-                to="/our-solution"
+                to="/solution"
                 className="rounded-xl border-2 border-white px-10 py-4 font-bold text-white transition-all duration-300 hover:bg-white hover:text-green-700"
               >
 
