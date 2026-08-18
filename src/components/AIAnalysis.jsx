@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import AnimatedSection from "./AnimatedSection";
 
 export default function AIAnalysis() {
@@ -8,17 +9,34 @@ export default function AIAnalysis() {
   const [progress, setProgress] = useState(0);
   const [status, setStatus] = useState("");
 
+  const navigate = useNavigate();
+
   const analyseImage = () => {
     setLoading(true);
     setResult(false);
     setProgress(0);
 
     const steps = [
-      { progress: 20, status: "Uploading Image..." },
-      { progress: 40, status: "Scanning Waste..." },
-      { progress: 60, status: "Detecting Waste Type..." },
-      { progress: 80, status: "Estimating Quantity..." },
-      { progress: 100, status: "Finding Nearby Processor..." },
+      {
+        progress: 20,
+        status: "Uploading Image...",
+      },
+      {
+        progress: 40,
+        status: "Scanning Waste...",
+      },
+      {
+        progress: 60,
+        status: "Detecting Waste Type...",
+      },
+      {
+        progress: 80,
+        status: "Estimating Quantity...",
+      },
+      {
+        progress: 100,
+        status: "Finding Nearby Processor...",
+      },
     ];
 
     steps.forEach((step, index) => {
@@ -76,7 +94,9 @@ export default function AIAnalysis() {
                 exit={{ opacity: 0 }}
                 className="mt-16"
               >
+
                 <div className="flex justify-between">
+
                   <span className="font-semibold">
                     {status}
                   </span>
@@ -84,9 +104,11 @@ export default function AIAnalysis() {
                   <span>
                     {progress}%
                   </span>
+
                 </div>
 
                 <div className="mt-4 h-4 bg-gray-200 rounded-full overflow-hidden">
+
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{
@@ -97,7 +119,9 @@ export default function AIAnalysis() {
                     }}
                     className="h-full bg-green-600"
                   />
+
                 </div>
+
               </motion.div>
             )}
           </AnimatePresence>
@@ -124,13 +148,14 @@ export default function AIAnalysis() {
                 className="mt-20"
               >
 
-                {/* Result Cards */}
+                {/* Main Results */}
 
                 <div className="grid md:grid-cols-2 gap-8">
 
                   {/* Waste Type */}
 
                   <div className="rounded-3xl bg-green-50 p-8">
+
                     <p className="text-gray-500">
                       Waste Type
                     </p>
@@ -138,11 +163,13 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black text-green-700">
                       Vegetable Waste
                     </h3>
+
                   </div>
 
                   {/* Confidence */}
 
                   <div className="rounded-3xl bg-green-50 p-8">
+
                     <p className="text-gray-500">
                       Confidence
                     </p>
@@ -150,11 +177,13 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black text-green-700">
                       97%
                     </h3>
+
                   </div>
 
                   {/* Quantity */}
 
                   <div className="rounded-3xl bg-green-50 p-8">
+
                     <p className="text-gray-500">
                       Estimated Quantity
                     </p>
@@ -162,11 +191,13 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black text-green-700">
                       12.4 kg
                     </h3>
+
                   </div>
 
                   {/* Processor */}
 
                   <div className="rounded-3xl bg-green-50 p-8">
+
                     <p className="text-gray-500">
                       Nearest Processor
                     </p>
@@ -174,6 +205,7 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black text-green-700">
                       Green Earth Compost
                     </h3>
+
                   </div>
 
                 </div>
@@ -185,6 +217,7 @@ export default function AIAnalysis() {
                   {/* Distance */}
 
                   <div className="rounded-3xl bg-white border p-8">
+
                     <p className="text-gray-500">
                       Distance
                     </p>
@@ -192,11 +225,13 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black">
                       2.3 km
                     </h3>
+
                   </div>
 
                   {/* Pickup Time */}
 
                   <div className="rounded-3xl bg-white border p-8">
+
                     <p className="text-gray-500">
                       Estimated Pickup
                     </p>
@@ -204,9 +239,19 @@ export default function AIAnalysis() {
                     <h3 className="mt-2 text-3xl font-black">
                       18 min
                     </h3>
+
                   </div>
 
                 </div>
+
+                {/* Schedule Pickup */}
+
+                <button
+                  onClick={() => navigate("/register")}
+                  className="mt-12 w-full bg-green-600 hover:bg-green-700 transition text-white py-5 rounded-2xl font-bold text-lg"
+                >
+                  Schedule Pickup
+                </button>
 
               </motion.div>
             )}
