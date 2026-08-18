@@ -31,15 +31,6 @@ export default function Footer() {
 
               <li>
                 <Link
-                  to="/"
-                  className="hover:text-green-400 transition"
-                >
-                  Home
-                </Link>
-              </li>
-
-              <li>
-                <Link
                   to="/about"
                   className="hover:text-green-400 transition"
                 >
