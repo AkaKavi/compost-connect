@@ -39,7 +39,7 @@ function Hero() {
         {/* Right */}
         <div>
           <img
-            src="https://kommodo.ai/i/ASCWD70obcWRzECYZgYj"
+            src="https://img.sanishtech.com/u/599ce690cd18e338c5baff2cbf2d6ff9.png"
             alt="Hero"
             className="rounded-3xl shadow-2xl"
           />
