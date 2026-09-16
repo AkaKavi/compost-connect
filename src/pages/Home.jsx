@@ -1,3 +1,4 @@
+import heroImage from "../assets/hero.png";
 import Hero from "../components/Hero";
 import Mission from "../components/Mission";
 import HowItWorks from "../components/Howitworks";
